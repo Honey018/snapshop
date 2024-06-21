@@ -14,16 +14,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MultiProvider(
-        providers: [
-          ChangeNotifierProvider(create: (_) => CartProvider()),
-            ChangeNotifierProvider(create: (_) => FavoriteProvider()),
-        ],
-        child: MaterialApp(
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            textTheme: GoogleFonts.mulishTextTheme(),
-          ),
-          home: const BottomNavBar(),
-        ),
-      );
+    providers: [
+      ChangeNotifierProvider(create: (_) => CartProvider()),
+      ChangeNotifierProvider(create: (_) => FavoriteProvider()),
+    ],
+    child: MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        textTheme: GoogleFonts.mulishTextTheme(),
+      ),
+      home: const BottomNavBar(),
+    ),
+  );
 }
